@@ -30,10 +30,54 @@ div.container {
 
 article.post {
 	border-bottom: 2px dotted #bbbbbb;
+	margin: 20px 0;
 }
 
 article.post:last-of-type {
 	border-bottom: none;
+}
+
+/*Aside styles*/
+article.post-aside,
+article.post-link {
+	font-size: 125%;
+	background-color: #fff5cb;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, .1);
+}
+
+.mini-meta {
+	font-size: 68%;
+	margin: 0;
+	color: #777;
+}
+
+/*link post format styles*/
+article.post-link {
+	padding: 0;
+	background-color: #e0ebff;
+}
+
+article.post-link a {
+	display: block; /*so the link itself and not the parent element has the padding*/
+	padding: 20px;
+}
+
+/*post format gallery styles */
+article.post-gallery {
+	background-color: #222;
+	color: #fff;
+	padding: 20px;
+}
+
+article.post-gallery img {
+	border: none !important;
+	/*the border is done inline in the html and hence is harder to overwrite as it is later than the css sheet, here it is approriate to use the !important tag*/
+}
+
+article.post-gallery h2 {
+	text-align: center;
 }
 
 /* Header */

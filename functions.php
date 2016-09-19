@@ -54,6 +54,9 @@ function learningWordPress_setup() {
 		'footer' => __('Footer Menu'),
 	));
 
+	// Add post format support, modules created are on dashboard under post
+	add_theme_support('post-formats', array('aside', 'gallery', 'link'));
+
 }
 
 // remember to register the new function!! Twit..

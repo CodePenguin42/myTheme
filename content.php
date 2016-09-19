@@ -46,4 +46,4 @@
 
 </article>
 
-<!--see index.php for more use on get content function, there are 9 types of posts: aside, gallery, link, image, quote, status, video, audio, and chat.  -->
+<!--see index.php for more use on get content function, there are 9 types of posts: aside, gallery, link, image, quote, status, video, audio, and chat. You have to enable the post format support -->

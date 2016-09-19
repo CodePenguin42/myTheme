@@ -62,4 +62,44 @@ function learningWordPress_setup() {
 // remember to register the new function!! Twit..
 add_action('after_setup_theme', 'learningWordPress_setup');
 
+
+// add the widget locations
+function ourWidgetsInit() {
+	register_sidebar( array(
+		'name' => 'Sidebar', //this is the name used in the admin, human friendly name
+		'id' => 'sidebar1', //this is the computer friendly name
+		'before_widget' => '<div class="widget-item">',
+		'after_widget' => '</div>',
+		// before and after adds the html div so that it can be styled, and removes the bullet point on the title
+		'before_title' => '<h4 class="my-special-class">',
+		'after_title' => '</h4>'
+		// styling the title
+	));
+
+	register_sidebar(array(
+		'name' => 'Footer Area 1',
+		'id' => 'footer1'
+	));
+
+	register_sidebar(array(
+		'name' => 'Footer Area 2',
+		'id' => 'footer2'
+	));
+
+	register_sidebar(array(
+		'name' => 'Footer Area 3',
+		'id' => 'footer3'
+	));
+
+	register_sidebar(array(
+		'name' => 'Footer Area 4',
+		'id' => 'footer4'
+	));
+// can put widgets anywhere, just create a location and add it with the register_sidebar function
+
+}
+
+// ensures the function fires at the right time
+add_action('widgets_init', 'ourWidgetsInit');
+
 ?>

@@ -85,10 +85,30 @@ article.post-gallery h2 {
 	border-bottom: 2px solid #999;
 }
 
+/*footer widget area*/
+.footer-widget-area {
+	width: 25%;
+	float: left;
+	padding-right: 40px;
+	box-sizing: border-box;
+}
+
 /* Footer */
 .site-footer {
 	margin-top: 30px;
 	border-top: 2px solid #999;
+}
+
+/*main column */
+.main-column {
+	width: 66%;
+	float:left;
+}
+
+/*side column*/
+.secondary-column {
+	width: 30%;
+	float: right;
 }
 
 /*navigation menus*/

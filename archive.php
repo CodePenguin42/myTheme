@@ -5,7 +5,14 @@ get_header();
 // new code for archive page, with logic for each type of archive
 ?>
 
-<h2><?php
+<div class="site-content clearfix">
+
+  <div class="main-column">
+
+    <?php
+      if (habe_posts()) : ?>
+
+      <h2><?php
 
   if (is_category() ) {
     single_cat_title(); //outputs catagory title
@@ -31,18 +38,23 @@ get_header();
 
 <?php
 
-if (have_posts()) :
-	while (have_posts()) : the_post(); ?>
+	while (have_posts()) : the_post();
 
-	 <?php get_template_part('content', get_post_format()); ?>
+	  get_template_part('content', get_post_format());
 
-	<?php endwhile;
+	endwhile;
 
 	else :
 		echo '<p>No content found</p>';
 
-	endif;
+	endif; ?>
 
-get_footer();
+</div><!--main column-->
+
+  <?php get_sidebar (); ?>
+
+</div> <!--end of site content-->
+
+<?php get_footer();
 
 ?>

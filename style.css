@@ -181,6 +181,25 @@ article.page h2 {
 .clearfix:after {clear:both;}
 .clearfix{*zoom:1;}
 
+/*front page two colums*/
+.frontpage-container {
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 40px;
+}
+
+.fontpage-container:last-child {
+	padding-right: 0;
+}
+
+.frontpage-article {
+	width: 50%;
+	float: left;
+	padding-right: 20px;
+	box-sizing: border-box;
+	}
+/*margin is not included in the border box*/
+
 /*two colum title layout contact-us*/
 div.title-column {
   width:30%;
